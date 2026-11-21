@@ -1,4 +1,4 @@
-# Math Adventure — Matematika SD Kelas 1–6
+# Math Adventure v1.1 — Matematika SD Kelas 1–6
 
 Math Adventure adalah aplikasi web edukasi Matematika untuk siswa SD usia 6–12 tahun. Anak-anak berlatih berhitung dan memahami konsep Matematika melalui kuis bergambar dengan emoji buah, hewan, sayuran, bunga, serta ilustrasi bentuk dan benda sehari-hari.
 
@@ -29,9 +29,15 @@ Math Adventure adalah aplikasi web edukasi Matematika untuk siswa SD usia 6–12
 - Tema terang/gelap, animasi ringan, desain responsif desktop/tablet/ponsel, dan dukungan reduced motion.
 - Tidak memerlukan server, database, akun, atau API.
 
+## Pembaruan v1.1 — Tipografi lebih besar
+
+- Ukuran teks diperbesar pada header, halaman sambutan/login, pilihan materi, kartu soal, pilihan jawaban, feedback, hasil, toast, dan footer.
+- Ukuran font untuk tablet dan ponsel disesuaikan agar lebih mudah dibaca tanpa membuat tata letak melebar.
+- Tema terang/gelap, animasi, dan dukungan `prefers-reduced-motion` tetap dipertahankan.
+
 ## Cara menjalankan
 
-1. Ekstrak `Math_Adventure_v1.0.zip`.
+1. Ekstrak `Math_Adventure_v1.1.zip`.
 2. Buka folder `Math_Adventure_v1.0` di Visual Studio Code.
 3. Jalankan `index.html` menggunakan ekstensi Live Server. Bisa juga membuka `index.html` langsung di browser.
 4. Masukkan nama dan umur pemain, lalu pilih materi.
@@ -39,7 +45,7 @@ Math Adventure adalah aplikasi web edukasi Matematika untuk siswa SD usia 6–12
 ## Struktur folder
 
 ```text
-Math_Adventure_v1.0/
+Math_Adventure_v1.1/
 ├── index.html
 ├── README.md
 ├── PANDUAN_MATERI.md

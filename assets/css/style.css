@@ -2110,3 +2110,714 @@ body.theme-dark .option-letter {
     transition-duration: 0.01ms !important;
   }
 }
+
+.brand-copy strong {
+  font-size: 16px;
+}
+.brand-copy small {
+  font-size: 10px;
+}
+.player-summary-copy small {
+  font-size: 10px;
+}
+.player-summary-copy strong {
+  font-size: 14px;
+}
+.header-score {
+  font-size: 14px;
+}
+.theme-toggle {
+  font-size: 20px;
+}
+
+.eyebrow,
+.section-eyebrow {
+  font-size: 11px;
+}
+.welcome-copy h1 {
+  font-size: clamp(46px, 6.5vw, 80px);
+}
+.welcome-lead {
+  font-size: 18px;
+  line-height: 1.85;
+}
+.highlight-item strong {
+  font-size: 15px;
+}
+.highlight-item small {
+  font-size: 13px;
+  line-height: 1.55;
+}
+.login-card h2 {
+  font-size: 24px;
+}
+.mini-label {
+  font-size: 10px;
+}
+.login-form label {
+  font-size: 14px;
+}
+.input-wrap input,
+.input-wrap select {
+  font-size: 16px;
+}
+.login-hint {
+  font-size: 12px;
+  line-height: 1.65;
+}
+.form-error {
+  font-size: 13px;
+}
+.privacy-note {
+  font-size: 11px;
+  line-height: 1.6;
+}
+.welcome-bottom {
+  font-size: 11px;
+}
+.btn {
+  font-size: 14px;
+}
+.btn-login {
+  font-size: 15px;
+}
+
+.material-heading h1 {
+  font-size: clamp(34px, 4.2vw, 46px);
+}
+.material-heading p {
+  font-size: 15px;
+  line-height: 1.7;
+}
+.grade-stamp strong {
+  font-size: 12px;
+}
+.grade-stamp small {
+  font-size: 10px;
+}
+.overview-icon {
+  font-size: 20px;
+}
+.overview-item small {
+  font-size: 10px;
+}
+.overview-item strong {
+  font-size: 16px;
+}
+.material-section-heading h2 {
+  font-size: 25px;
+}
+.material-helper {
+  font-size: 12px;
+}
+.material-card {
+  padding: 21px;
+}
+.material-icon {
+  font-size: 27px;
+}
+.material-status {
+  font-size: 10px;
+}
+.material-card h3 {
+  font-size: 19px;
+  line-height: 1.35;
+}
+.material-card-description {
+  font-size: 13px;
+  line-height: 1.7;
+}
+.material-skill {
+  font-size: 11px;
+}
+.material-progress-meta {
+  font-size: 11px;
+}
+.material-progress-meta strong {
+  font-size: 12px;
+}
+.material-card-bottom {
+  font-size: 11px;
+}
+.material-card-cta {
+  font-size: 13px;
+}
+.encouragement strong {
+  font-size: 13px;
+}
+.encouragement small {
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.back-button {
+  min-height: 42px;
+  font-size: 13px;
+}
+.quiz-player-pill,
+.quiz-score-pill {
+  min-height: 40px;
+  font-size: 12px;
+}
+.quiz-material-title h1 {
+  font-size: clamp(24px, 3.2vw, 31px);
+}
+.quiz-material-title .section-eyebrow {
+  font-size: 10px;
+}
+.question-level small {
+  font-size: 10px;
+}
+.question-level strong {
+  font-size: 19px;
+}
+.quiz-progress-meta {
+  font-size: 12px;
+}
+.quiz-progress-meta > strong {
+  font-size: 14px;
+}
+.question-tag {
+  font-size: 10px;
+}
+.question-number {
+  font-size: 9px;
+}
+.question-card h2 {
+  font-size: clamp(24px, 3.6vw, 33px);
+  line-height: 1.4;
+}
+.question-visual {
+  font-size: clamp(27px, 4.2vw, 37px);
+}
+.question-instruction {
+  font-size: 14px;
+  line-height: 1.65;
+}
+.answer-option {
+  min-height: 64px;
+  font-size: 16px;
+  line-height: 1.45;
+}
+.option-letter {
+  width: 32px;
+  height: 32px;
+  font-size: 12px;
+}
+.answer-feedback strong {
+  font-size: 14px;
+}
+.answer-feedback p {
+  font-size: 13px;
+  line-height: 1.65;
+}
+.attempt-hint {
+  font-size: 12px;
+  line-height: 1.6;
+}
+.btn-next {
+  min-height: 48px;
+}
+.quiz-bottom-note {
+  font-size: 12px;
+  line-height: 1.7;
+}
+.text-button {
+  font-size: 12px;
+}
+
+.result-card h1 {
+  font-size: clamp(28px, 4.2vw, 37px);
+}
+.result-description {
+  font-size: 14px;
+  line-height: 1.75;
+}
+.result-material-label {
+  font-size: 13px;
+}
+.result-stats strong {
+  font-size: 24px;
+}
+.result-stats small {
+  font-size: 9px;
+}
+.result-best {
+  font-size: 12px;
+}
+.result-actions .btn {
+  min-height: 48px;
+}
+
+.footer-brand {
+  font-size: 11px;
+}
+.footer-inner p {
+  font-size: 12px;
+  line-height: 1.7;
+}
+.footer-tagline {
+  font-size: 10px;
+}
+.toast {
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+@media (max-width: 720px) {
+  .welcome-copy h1 {
+    font-size: clamp(45px, 8vw, 64px);
+  }
+  .welcome-lead {
+    font-size: 16px;
+  }
+  .highlight-item strong {
+    font-size: 13px;
+  }
+  .highlight-item small {
+    font-size: 11px;
+  }
+  .material-heading h1 {
+    font-size: clamp(32px, 5vw, 40px);
+  }
+  .material-card h3 {
+    font-size: 18px;
+  }
+  .material-card-description {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 520px) {
+  .brand-copy strong {
+    font-size: 12px;
+  }
+  .brand-copy small {
+    font-size: 8px;
+    letter-spacing: 0.17em;
+  }
+  .player-summary-copy small {
+    font-size: 8px;
+  }
+  .player-summary-copy strong {
+    max-width: 74px;
+    font-size: 11px;
+  }
+  .header-score {
+    font-size: 11px;
+  }
+  .theme-toggle {
+    width: 38px;
+    height: 38px;
+    font-size: 18px;
+  }
+
+  .eyebrow,
+  .section-eyebrow {
+    font-size: 9px;
+  }
+  .welcome-copy h1 {
+    font-size: clamp(40px, 10.5vw, 54px);
+    line-height: 1.12;
+  }
+  .welcome-lead {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+  .highlight-item strong {
+    font-size: 13px;
+  }
+  .highlight-item small {
+    font-size: 11px;
+    line-height: 1.6;
+  }
+  .login-card h2 {
+    font-size: 22px;
+  }
+  .mini-label {
+    font-size: 9px;
+  }
+  .login-form label {
+    font-size: 13px;
+  }
+  .input-wrap {
+    min-height: 50px;
+  }
+  .input-wrap input,
+  .input-wrap select {
+    height: 48px;
+    font-size: 15px;
+  }
+  .login-hint {
+    font-size: 11px;
+  }
+  .form-error {
+    font-size: 12px;
+  }
+  .privacy-note {
+    font-size: 10px;
+  }
+  .welcome-bottom {
+    font-size: 8px;
+    line-height: 1.5;
+  }
+  .btn {
+    font-size: 13px;
+  }
+  .btn-login {
+    font-size: 14px;
+  }
+
+  .material-heading h1 {
+    font-size: 32px;
+  }
+  .material-heading p {
+    max-width: 100%;
+    font-size: 13px;
+    line-height: 1.65;
+  }
+  .grade-stamp {
+    min-width: 88px;
+    padding: 9px 8px;
+  }
+  .grade-stamp span {
+    font-size: 21px;
+  }
+  .grade-stamp strong {
+    font-size: 9px;
+  }
+  .grade-stamp small {
+    font-size: 8px;
+  }
+  .overview-strip {
+    gap: 7px;
+    padding: 10px;
+  }
+  .overview-icon {
+    width: 34px;
+    height: 34px;
+    font-size: 17px;
+  }
+  .overview-item small {
+    font-size: 8px;
+  }
+  .overview-item strong {
+    font-size: 12px;
+  }
+  .material-section-heading h2 {
+    font-size: 21px;
+  }
+  .material-helper {
+    font-size: 10px;
+    line-height: 1.5;
+  }
+  .material-card {
+    grid-template-columns: 48px minmax(0, 1fr);
+    gap: 8px 12px;
+    padding: 15px;
+  }
+  .material-icon {
+    width: 46px;
+    height: 46px;
+    font-size: 24px;
+  }
+  .material-status {
+    top: 14px;
+    right: 14px;
+    font-size: 8px;
+  }
+  .material-card h3 {
+    padding-right: 84px;
+    font-size: 16px;
+    line-height: 1.35;
+  }
+  .material-card-description {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  .material-skill {
+    font-size: 9px;
+    line-height: 1.5;
+  }
+  .material-progress-meta {
+    font-size: 10px;
+  }
+  .material-progress-meta strong {
+    font-size: 11px;
+  }
+  .material-card-bottom {
+    font-size: 10px;
+  }
+  .material-card-cta {
+    font-size: 11px;
+  }
+  .encouragement strong {
+    font-size: 12px;
+  }
+  .encouragement small {
+    font-size: 10px;
+    line-height: 1.55;
+  }
+  .material-footer-actions .btn {
+    min-height: 46px;
+  }
+
+  .back-button {
+    min-height: 38px;
+    padding-inline: 9px;
+    font-size: 11px;
+  }
+  .quiz-player-pill,
+  .quiz-score-pill {
+    min-height: 36px;
+    padding-inline: 8px;
+    font-size: 10px;
+  }
+  .quiz-player-pill strong {
+    max-width: 76px;
+  }
+  .quiz-title-row {
+    gap: 9px;
+  }
+  .quiz-material-icon {
+    width: 46px;
+    height: 46px;
+    font-size: 23px;
+  }
+  .quiz-material-title h1 {
+    font-size: 22px;
+    line-height: 1.25;
+  }
+  .quiz-material-title .section-eyebrow {
+    font-size: 8px;
+  }
+  .question-level small {
+    font-size: 8px;
+  }
+  .question-level strong {
+    font-size: 16px;
+  }
+  .quiz-progress-card {
+    padding: 12px;
+  }
+  .quiz-progress-meta {
+    font-size: 11px;
+  }
+  .quiz-progress-meta > strong {
+    font-size: 12px;
+  }
+  .question-card {
+    padding: 19px 16px;
+  }
+  .question-tag {
+    font-size: 8px;
+  }
+  .question-number {
+    font-size: 8px;
+  }
+  .question-card h2 {
+    margin-top: 15px;
+    font-size: 23px;
+    line-height: 1.4;
+  }
+  .question-visual {
+    min-height: 66px;
+    font-size: 29px;
+    line-height: 1.5;
+  }
+  .question-instruction {
+    font-size: 12px;
+  }
+  .answer-option {
+    min-height: 58px;
+    padding: 11px 12px;
+    font-size: 15px;
+  }
+  .option-letter {
+    width: 29px;
+    height: 29px;
+    font-size: 11px;
+  }
+  .answer-feedback {
+    padding: 12px;
+  }
+  .answer-feedback strong {
+    font-size: 13px;
+  }
+  .answer-feedback p {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  .attempt-hint {
+    font-size: 11px;
+  }
+  .btn-next {
+    min-height: 46px;
+  }
+  .quiz-bottom-note {
+    font-size: 11px;
+    line-height: 1.65;
+  }
+  .text-button {
+    font-size: 11px;
+    line-height: 1.6;
+  }
+
+  .result-card h1 {
+    font-size: 28px;
+  }
+  .result-description {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  .result-material-label {
+    font-size: 12px;
+  }
+  .result-stats strong {
+    font-size: 21px;
+  }
+  .result-stats small {
+    font-size: 8px;
+  }
+  .result-best {
+    font-size: 11px;
+  }
+  .result-actions .btn {
+    font-size: 13px;
+  }
+
+  .footer-brand {
+    font-size: 10px;
+  }
+  .footer-inner p {
+    font-size: 10px;
+    line-height: 1.65;
+  }
+  .footer-tagline {
+    font-size: 9px;
+  }
+  .toast {
+    right: 12px;
+    bottom: 12px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .header-inner {
+    gap: 6px;
+  }
+  .brand {
+    gap: 5px;
+  }
+  .brand-logo {
+    width: 32px;
+    height: 32px;
+  }
+  .brand-copy strong {
+    font-size: 10px;
+  }
+  .brand-copy small {
+    font-size: 7px;
+  }
+  .player-summary {
+    gap: 4px;
+    padding-inline: 4px;
+  }
+  .player-avatar {
+    width: 26px;
+    height: 26px;
+    font-size: 14px;
+  }
+  .player-summary-copy strong {
+    max-width: 58px;
+    font-size: 10px;
+  }
+  .header-score {
+    font-size: 10px;
+  }
+  .theme-toggle {
+    width: 34px;
+    height: 34px;
+  }
+
+  .welcome-copy h1 {
+    font-size: 39px;
+  }
+  .welcome-lead {
+    font-size: 14px;
+  }
+  .welcome-bottom {
+    font-size: 7px;
+  }
+  .material-heading h1 {
+    font-size: 29px;
+  }
+  .grade-stamp {
+    min-width: 80px;
+  }
+  .grade-stamp strong {
+    font-size: 8px;
+  }
+  .overview-strip {
+    grid-template-columns: 1fr 1fr;
+  }
+  .overview-item {
+    gap: 5px;
+    padding-inline: 2px;
+  }
+  .overview-item strong {
+    font-size: 11px;
+  }
+  .material-card h3 {
+    padding-right: 76px;
+    font-size: 15px;
+  }
+  .material-card-description {
+    font-size: 11px;
+  }
+  .material-status {
+    font-size: 7px;
+  }
+  .quiz-topbar {
+    gap: 4px;
+  }
+  .back-button {
+    gap: 4px;
+    padding-inline: 6px;
+    font-size: 10px;
+  }
+  .quiz-player-pill,
+  .quiz-score-pill {
+    gap: 3px;
+    padding-inline: 6px;
+    font-size: 9px;
+  }
+  .quiz-player-pill {
+    max-width: 42%;
+  }
+  .quiz-player-pill strong {
+    max-width: 54px;
+  }
+  .quiz-material-title h1 {
+    font-size: 20px;
+  }
+  .question-card h2 {
+    font-size: 21px;
+  }
+  .answer-option {
+    font-size: 14px;
+  }
+  .footer-inner p {
+    font-size: 9px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .material-card,
+  .material-card::after,
+  .progress-track span,
+  .material-progress-track span {
+    transition: none !important;
+  }
+}
