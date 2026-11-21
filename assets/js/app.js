@@ -251,9 +251,7 @@
     try {
       const theme = localStorage.getItem(THEME_KEY);
       document.body.classList.toggle("theme-dark", theme === "dark");
-    } catch (error) {
-      // Tema tetap dapat diganti walaupun localStorage tidak tersedia.
-    }
+    } catch (error) {}
     updateThemeButton();
   }
 
