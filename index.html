@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff8ee" />
+    <meta
+      name="description"
+      content="Math Adventure — permainan belajar Matematika interaktif untuk siswa SD kelas 1–6. Berhitung bersama buah, hewan, sayuran, bunga, dan tantangan seru."
+    />
+    <meta name="author" content="Arjun Yuda Firwanda" />
+    <title>Math Adventure | Belajar Matematika Jadi Petualangan</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900;1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="background-decor decor-one" aria-hidden="true"></div>
+    <div class="background-decor decor-two" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#home" aria-label="Math Adventure beranda">
+          <img src="assets/images/logo.svg" alt="" class="brand-logo" />
+          <span class="brand-copy">
+            <strong>MATH ADVENTURE</strong>
+            <small>LEARN · PLAY · GROW</small>
+          </span>
+        </a>
+
+        <div class="header-tools">
+          <div class="player-summary" id="playerSummary" hidden>
+            <span class="player-avatar" aria-hidden="true">🧑‍🎓</span>
+            <span class="player-summary-copy">
+              <small>PEMAIN</small>
+              <strong id="headerPlayerName">Petualang</strong>
+              <small id="headerGrade">Kelas 1 SD</small>
+            </span>
+            <span class="header-score" title="Total skor terbaik">
+              <span aria-hidden="true">⭐</span>
+              <strong id="headerScore">0</strong>
+            </span>
+          </div>
+          <button
+            type="button"
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Aktifkan tema gelap"
+            title="Ganti tema"
+          >
+            <span id="themeIcon" aria-hidden="true">🌙</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="home">
+      <!-- WELCOME / LOGIN -->
+      <section class="welcome-screen screen page-shell" id="welcomeScreen">
+        <div class="welcome-grid">
+          <div class="welcome-copy">
+            <div class="eyebrow">
+              <span class="eyebrow-spark">✦</span> PETUALANGAN MATEMATIKA
+              DIMULAI
+            </div>
+            <h1>Belajar Matematika<br /><span>jadi seru!</span></h1>
+            <p class="welcome-lead">
+              Hitung buah, temukan pola, jelajahi bentuk, dan pecahkan tantangan
+              angka. Setiap jawaban membawamu ke petualangan baru!
+            </p>
+            <div class="welcome-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">🍓</span>
+                <span
+                  ><strong>Belajar dengan gambar</strong
+                  ><small>Buah, hewan, sayuran, dan bunga</small></span
+                >
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🏅</span>
+                <span
+                  ><strong>6 jenjang kelas SD</strong
+                  ><small>Tantangan sesuai usia 6–12 tahun</small></span
+                >
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🌈</span>
+                <span
+                  ><strong>Progres tersimpan</strong
+                  ><small>Lanjutkan setiap materi kapan saja</small></span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="login-card">
+            <div class="login-card-top">
+              <div class="login-card-icon">🧮</div>
+              <div>
+                <span class="mini-label">HELLO, LITTLE EXPLORER!</span>
+                <h2>Siapa namamu?</h2>
+              </div>
+            </div>
+            <div class="login-illustration" aria-hidden="true">
+              <span class="float-object obj-apple">🍎</span>
+              <span class="float-object obj-bunny">🐰</span>
+              <span class="float-object obj-carrot">🥕</span>
+              <span class="float-object obj-flower">🌻</span>
+              <span class="illustration-equation">2 + 3 <b>=</b> 5</span>
+              <span class="illustration-star star-left">✦</span>
+              <span class="illustration-star star-right">✧</span>
+            </div>
+            <form class="login-form" id="loginForm" novalidate>
+              <label for="playerNameInput">Nama pemain</label>
+              <div class="input-wrap">
+                <span aria-hidden="true">😊</span>
+                <input
+                  id="playerNameInput"
+                  name="playerName"
+                  type="text"
+                  minlength="2"
+                  maxlength="24"
+                  autocomplete="name"
+                  placeholder="Contoh: Aisyah"
+                  required
+                />
+              </div>
+              <label for="playerAgeInput">Umur</label>
+              <div class="input-wrap age-input-wrap">
+                <span aria-hidden="true">🎂</span>
+                <select id="playerAgeInput" name="playerAge" required>
+                  <option value="">Pilih umur</option>
+                  <option value="6">6 tahun</option>
+                  <option value="7">7 tahun</option>
+                  <option value="8">8 tahun</option>
+                  <option value="9">9 tahun</option>
+                  <option value="10">10 tahun</option>
+                  <option value="11">11 tahun</option>
+                  <option value="12">12 tahun</option>
+                </select>
+              </div>
+              <p class="login-hint">
+                Umur digunakan untuk memilih materi Matematika yang sesuai
+                dengan kelasmu.
+              </p>
+              <p class="form-error" id="loginError" role="alert" hidden></p>
+              <button class="btn btn-primary btn-login" type="submit">
+                <span>Mulai Petualangan</span><span aria-hidden="true">➜</span>
+              </button>
+              <p class="privacy-note">
+                🔒 Progres tersimpan di perangkat ini. Tidak perlu akun atau
+                email.
+              </p>
+            </form>
+          </div>
+        </div>
+        <div class="welcome-bottom">
+          <span>📚 MATEMATIKA SD KELAS 1–6</span>
+          <span>COUNT · THINK · DISCOVER</span>
+        </div>
+      </section>
+
+      <!-- MATERIAL CHOICE -->
+      <section
+        class="material-screen screen page-shell"
+        id="materialScreen"
+        hidden
+      >
+        <div class="screen-heading material-heading">
+          <div>
+            <div class="section-eyebrow">
+              SELAMAT DATANG KEMBALI,
+              <span id="welcomePlayerName">PETUALANG</span>! ✨
+            </div>
+            <h1>Yuk, pilih <span>materi</span>!</h1>
+            <p id="gradeDescription">
+              Pilih tantangan Matematika yang ingin kamu kerjakan hari ini.
+            </p>
+          </div>
+          <div class="grade-stamp" id="gradeStamp">
+            <span>🎒</span><strong>KELAS 1 SD</strong
+            ><small>USIA 6 TAHUN</small>
+          </div>
+        </div>
+
+        <div class="overview-strip">
+          <div class="overview-item">
+            <span class="overview-icon">🗂️</span>
+            <span
+              ><small>MATERI</small
+              ><strong id="materialCount">4 Materi</strong></span
+            >
+          </div>
+          <div class="overview-item">
+            <span class="overview-icon">⭐</span>
+            <span
+              ><small>SKOR TERBAIK</small
+              ><strong id="overallScore">0 Poin</strong></span
+            >
+          </div>
+          <div class="overview-item overview-progress">
+            <span class="overview-icon">🚀</span>
+            <span class="overview-progress-copy"
+              ><small>PROGRES BELAJAR</small
+              ><strong id="overallProgressText">0% selesai</strong
+              ><span class="mini-progress"><i id="overallProgressBar"></i></span
+            ></span>
+          </div>
+        </div>
+
+        <div class="material-section-heading">
+          <div>
+            <span class="section-eyebrow">CHOOSE YOUR CHALLENGE</span>
+            <h2>Petualangan Materi</h2>
+          </div>
+          <span class="material-helper"
+            >Pilih kartu untuk mulai atau lanjutkan ▶</span
+          >
+        </div>
+        <div class="material-grid" id="materialGrid"></div>
+
+        <div class="material-footer-actions">
+          <div class="encouragement">
+            <span>💡</span
+            ><span
+              ><strong>Belajar sedikit demi sedikit, ya!</strong
+              ><small
+                >Setiap soal adalah kesempatan untuk menjadi lebih hebat.</small
+              ></span
+            >
+          </div>
+          <button
+            type="button"
+            class="btn btn-outline"
+            id="switchPlayerFromMaterials"
+          >
+            Ganti Pemain
+          </button>
+        </div>
+      </section>
+
+      <!-- QUIZ -->
+      <section class="quiz-screen screen page-shell" id="quizScreen" hidden>
+        <div class="quiz-topbar">
+          <button type="button" class="back-button" id="backToMaterials">
+            ← <span>Pilih Materi</span>
+          </button>
+          <div class="quiz-player-pill">
+            <span>🧑‍🎓</span><strong id="quizPlayerName">Petualang</strong
+            ><span class="pill-divider">·</span
+            ><span id="quizGradeLabel">Kelas 1</span>
+          </div>
+          <div class="quiz-score-pill">
+            ⭐ <strong id="quizScore">0</strong>
+          </div>
+        </div>
+
+        <div class="quiz-title-row">
+          <div class="quiz-material-title">
+            <span class="quiz-material-icon" id="quizMaterialIcon">🍎</span>
+            <div>
+              <span class="section-eyebrow" id="quizMaterialEyebrow"
+                >MATERI MATEMATIKA</span
+              >
+              <h1 id="quizMaterialTitle">Penjumlahan</h1>
+            </div>
+          </div>
+          <div class="question-level">
+            <small>LEVEL / SOAL</small
+            ><strong id="questionLevel">01 / 10</strong>
+          </div>
+        </div>
+
+        <div class="quiz-progress-card">
+          <div class="quiz-progress-meta">
+            <span
+              ><strong id="progressDone">0</strong> dari
+              <span id="progressTotal">10</span> soal selesai</span
+            ><strong id="progressPercent">0%</strong>
+          </div>
+          <div class="progress-track">
+            <span id="questionProgressBar"></span>
+          </div>
+        </div>
+
+        <article class="question-card" aria-labelledby="questionPrompt">
+          <div class="question-card-top">
+            <span class="question-tag">🧠 PIKIRKAN BAIK-BAIK!</span
+            ><span class="question-number" id="questionNumberBadge"
+              >SOAL 1</span
+            >
+          </div>
+          <h2 id="questionPrompt">Berapakah hasilnya?</h2>
+          <div class="question-visual" id="questionVisual" hidden></div>
+          <p class="question-instruction" id="questionInstruction">
+            Pilih satu jawaban yang paling tepat.
+          </p>
+          <div class="answer-grid" id="answerGrid"></div>
+          <div
+            class="answer-feedback"
+            id="answerFeedback"
+            role="status"
+            aria-live="polite"
+            hidden
+          >
+            <span class="feedback-emoji" id="feedbackEmoji">🌟</span>
+            <div>
+              <strong id="feedbackTitle">Hebat!</strong>
+              <p id="feedbackText">Jawabanmu benar.</p>
+            </div>
+          </div>
+          <div class="question-actions">
+            <span class="attempt-hint" id="attemptHint"
+              >Kamu punya 3 kesempatan. Semangat! 💪</span
+            >
+            <button
+              type="button"
+              class="btn btn-primary btn-next"
+              id="nextQuestionButton"
+              hidden
+            >
+              Soal Berikutnya <span aria-hidden="true">➜</span>
+            </button>
+          </div>
+        </article>
+
+        <div class="quiz-bottom-note">
+          <span>🌈</span> Tidak perlu terburu-buru. Baca soal dan pilih jawaban
+          dengan teliti.
+        </div>
+        <div class="quiz-exit-row">
+          <button type="button" class="text-button" id="exitQuizButton">
+            Simpan & kembali ke pilihan materi
+          </button>
+        </div>
+      </section>
+
+      <!-- RESULT -->
+      <section class="result-screen screen page-shell" id="resultScreen" hidden>
+        <div class="result-card">
+          <div class="result-confetti" aria-hidden="true">
+            <span>✦</span><span>✧</span><span>✦</span><span>✧</span>
+          </div>
+          <div class="result-trophy">🏆</div>
+          <span class="section-eyebrow">MISSION COMPLETED</span>
+          <h1>Hebat sekali, <span id="resultPlayerName">Petualang</span>!</h1>
+          <p class="result-description" id="resultDescription">
+            Kamu sudah menyelesaikan semua soal dalam materi ini.
+          </p>
+          <div class="result-material-label">
+            <span id="resultMaterialIcon">🍎</span
+            ><strong id="resultMaterialTitle">Penjumlahan</strong>
+          </div>
+          <div class="result-stats">
+            <div>
+              <strong id="resultScore">0</strong><small>POIN DIDAPAT</small>
+            </div>
+            <div>
+              <strong id="resultCorrect">0/10</strong
+              ><small>JAWABAN BENAR</small>
+            </div>
+            <div>
+              <strong id="resultAccuracy">0%</strong><small>AKURASI</small>
+            </div>
+          </div>
+          <div class="result-best" id="resultBestScore">
+            🏅 Skor terbaik: 0 poin
+          </div>
+          <div class="result-actions">
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="replayMaterialButton"
+            >
+              Ulangi Materi ↻
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline"
+              id="resultMaterialsButton"
+            >
+              Pilih Materi Lain
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner page-shell">
+        <a class="footer-brand" href="#home"
+          ><img src="assets/images/logo.svg" alt="" /><span
+            >MATH ADVENTURE</span
+          ></a
+        >
+        <p>
+          Designed & Developed by <strong>Arjun Yuda Firwanda</strong> · ©
+          <span id="currentYear"></span> All rights reserved.
+        </p>
+        <span class="footer-tagline">COUNT · THINK · DISCOVER</span>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite">
+      <span>✨</span><span id="toastMessage">Semangat!</span>
+    </div>
+
+    <script src="assets/js/question-bank.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
